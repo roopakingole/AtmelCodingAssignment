@@ -1,0 +1,63 @@
+\hypertarget{main_8c}{\section{C\-:/\-Users/\-F\-J\-W683/\-Documents/\-Atmel Studio/6.2/\-Atmel\-Coding\-Assignment/\-Atmel\-Coding\-Assignment/src/main.c File Reference}
+\label{main_8c}\index{C\-:/\-Users/\-F\-J\-W683/\-Documents/\-Atmel Studio/6.\-2/\-Atmel\-Coding\-Assignment/\-Atmel\-Coding\-Assignment/src/main.\-c@{C\-:/\-Users/\-F\-J\-W683/\-Documents/\-Atmel Studio/6.\-2/\-Atmel\-Coding\-Assignment/\-Atmel\-Coding\-Assignment/src/main.\-c}}
+}
+
+
+User application for Atmel Coding Assignment.  
+
+
+{\ttfamily \#include $<$asf.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}stdio\-\_\-serial.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8c_a60c3f5d87d763d7111a2f67856b94d07}{\#define {\bfseries I\-R\-Q\-\_\-\-P\-R\-I\-O\-R\-\_\-\-P\-I\-O}~0}\label{main_8c_a60c3f5d87d763d7111a2f67856b94d07}
+
+\item 
+\hypertarget{main_8c_a318c34e258183be25e1692fc1792d76d}{\#define \hyperlink{main_8c_a318c34e258183be25e1692fc1792d76d}{M\-A\-X\-\_\-\-N\-U\-M\-\_\-\-O\-F\-\_\-\-S\-T\-A\-T\-E\-S}~4}\label{main_8c_a318c34e258183be25e1692fc1792d76d}
+
+\begin{DoxyCompactList}\small\item\em A macro that defines Maximum number of states in state machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8c_aaaaa9ae1bd093b31a3e87de09a04dabf}{typedef enum app\-\_\-state\-\_\-t\-\_\- {\bfseries app\-\_\-state\-\_\-t}}\label{main_8c_aaaaa9ae1bd093b31a3e87de09a04dabf}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries app\-\_\-state\-\_\-t\-\_\-} \{ {\bfseries A\-P\-P\-\_\-\-S\-T\-A\-T\-E\-\_\-\-I\-N\-I\-T} =  0, 
+{\bfseries A\-P\-P\-\_\-\-S\-T\-A\-T\-E\-\_\-\-R\-U\-N\-\_\-\-D\-A\-T\-A\-\_\-\-S\-W\-A\-P\-\_\-\-T\-E\-S\-T} =  1, 
+{\bfseries A\-P\-P\-\_\-\-S\-T\-A\-T\-E\-\_\-\-R\-U\-N\-\_\-\-C\-O\-U\-N\-T\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-\_\-\-T\-E\-S\-T} =  2, 
+{\bfseries A\-P\-P\-\_\-\-S\-T\-A\-T\-E\-\_\-\-R\-U\-N\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-\_\-\-T\-E\-S\-T} =  3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{int {\bfseries main} (void)}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8c_a56a32add2530ff0c36415ea1d76a17d4}{char {\bfseries author\-\_\-name} \mbox{[}$\,$\mbox{]} = \char`\"{}Roopak Ingole\char`\"{}}\label{main_8c_a56a32add2530ff0c36415ea1d76a17d4}
+
+\item 
+\hypertarget{main_8c_a2f0b267a7faf7b31cd80a8af442ed6b9}{char {\bfseries company\-\_\-name} \mbox{[}$\,$\mbox{]} = \char`\"{}Atmel Corp.\char`\"{}}\label{main_8c_a2f0b267a7faf7b31cd80a8af442ed6b9}
+
+\item 
+\hypertarget{main_8c_aaba53ac1663c0c97e0423d152b24f80a}{bool {\bfseries test\-\_\-state\-\_\-switch} = true}\label{main_8c_aaba53ac1663c0c97e0423d152b24f80a}
+
+\item 
+\hypertarget{main_8c_a6b8c0c544cb3187d4b3257097c358c06}{app\-\_\-state\-\_\-t {\bfseries test\-\_\-current\-\_\-state} = A\-P\-P\-\_\-\-S\-T\-A\-T\-E\-\_\-\-R\-U\-N\-\_\-\-S\-E\-T\-\_\-\-B\-I\-T\-\_\-\-T\-E\-S\-T}\label{main_8c_a6b8c0c544cb3187d4b3257097c358c06}
+
+\item 
+\hypertarget{main_8c_a7dd42c912a0afd8bb4f008f23078534c}{bool {\bfseries init\-\_\-complete} = false}\label{main_8c_a7dd42c912a0afd8bb4f008f23078534c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User application for Atmel Coding Assignment. 
